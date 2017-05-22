@@ -114,7 +114,7 @@ public class Stop{
 	}
 	
 	public void addParadaAdyacente(Stop stop){
-			System.out.println("-_-" + stop);
+			//System.out.println("-_-" + stop);
 			paradasAdyacentes.add(stop);		
 		
 	//boolean agregar = true;
@@ -146,7 +146,7 @@ public class Stop{
 		this.idSigParada = idSigParada;
 	}
 
-	/*
+	
 	@Override
 	public String toString() {
 		return "Stop [id=" + id + ", journeyId=" + journeyId + ", idSigParada=" + idSigParada + "]";
@@ -164,6 +164,7 @@ public class Stop{
 		return false;
 	}
 
+	/*
 	@Override
 	public String toString() {
 		return "Stop [id=" + id + ", sigParada=" + sigParada + ", latitude=" + latitude + ", longitude=" + longitude
@@ -171,6 +172,7 @@ public class Stop{
 				+ ", journeyId=" + journeyId + ", paradasAdyacentes=" + paradasAdyacentes + ", idSigParada="
 				+ idSigParada + "]";
 	}	
+	//*/
         
 
 }

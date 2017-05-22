@@ -14,7 +14,7 @@ public class DBConnection {
     private final String USER = "cenidet";
     private String PASSWORD = "cenidet";
     private String IP = "10.0.0.6"; //172.16.10.195, 10.175.121.109
-    // 10.175.121.175
+    // 10.175.121.80
     private String DB_NAME = "public_transit";
     private String DRIVER = "com.mysql.jdbc.Driver";
 

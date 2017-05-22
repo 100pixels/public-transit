@@ -235,7 +235,7 @@ public class StopDAO extends PublicTransitDB implements StopInterface{
 	
 	
 	public static void insertParadasFromFile() throws Exception{
-		String fileName = "C:\\Users\\J.Ivan\\Google Drive\\residencia_cenidet\\base_de_datos\\paradas_test_excel_4_camino_2";
+		String fileName = "C:\\Users\\J.Ivan\\Google Drive\\residencia_cenidet\\base_de_datos\\paradas_test_excel_4_camino_1";
 										
 	      FileReader fr = new FileReader(fileName);
 	      BufferedReader br = new BufferedReader(fr);
