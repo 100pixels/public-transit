@@ -117,7 +117,11 @@ public class StopDAO extends PublicTransitDB implements StopInterface{
 		
 	public ArrayList<Stop> getAllStops() throws SQLException{
         connection = DBConnection.getInstance().getConnection();
-        sqlStatement ="SELECT * FROM parada ORDER BY id_viaje";
+        //sqlStatement ="SELECT * FROM parada ORDER BY id_viaje";
+        sqlStatement ="SELECT id_parada, id_sig_parada, latitud, longitud, polilinea, distancia_mts, descripcion, parada.id_viaje"+ 
+									" FROM parada, viaje"+ 
+									" WHERE parada.id_viaje = viaje.id_viaje"+
+									" AND viaje.direccion = 'ida'";
         preparedStatement = connection.prepareStatement(sqlStatement);                   
         resultSet = preparedStatement.executeQuery();
         

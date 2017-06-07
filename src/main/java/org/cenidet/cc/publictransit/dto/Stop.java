@@ -27,6 +27,12 @@ public class Stop{
 		this.distance_mts = distance_mts;
 		this.journeyId = journeyId;
 	}
+    
+	public Stop(double latitude, double longitude) {
+		super();
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 
 	public Stop() {
     	paradasAdyacentes = new ArrayList<Stop>();    	
